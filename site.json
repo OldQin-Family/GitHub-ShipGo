@@ -1,0 +1,235 @@
+{
+  "name": "GitHub-ShipGo",
+  "version": "3.0.4",
+  "license": "MIT",
+  "description": "把一个做完的项目，变成一套拿到就能发的发布包。",
+  "pages": [
+    {
+      "path": "README.md",
+      "role": "标题区"
+    },
+    {
+      "path": "README.md",
+      "role": "开头的话"
+    },
+    {
+      "path": "README.md",
+      "role": "界面一览"
+    },
+    {
+      "path": "README.md",
+      "role": "整机流程图"
+    },
+    {
+      "path": "README.md",
+      "role": "技术内容板块"
+    },
+    {
+      "path": "README.md",
+      "role": "边界与收尾"
+    },
+    {
+      "path": "README.md",
+      "role": "实测环境与兼容性"
+    },
+    {
+      "path": "README.en.md",
+      "role": "English README"
+    },
+    {
+      "path": "FINGERPRINTS.md",
+      "role": "发布件表"
+    },
+    {
+      "path": "使用说明.md",
+      "role": "使用说明"
+    },
+    {
+      "path": "SKILL.md",
+      "role": "AI 运行时手册"
+    },
+    {
+      "path": "llms.txt",
+      "role": "AI 读者入口"
+    },
+    {
+      "path": "NOTICE.md",
+      "role": "版权与致谢"
+    },
+    {
+      "path": "NOTICE.en.md",
+      "role": "版权与致谢（英文）"
+    },
+    {
+      "path": "ACKNOWLEDGEMENTS.md",
+      "role": "参考留痕"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "role": "版本链"
+    },
+    {
+      "path": "隐私与合规说明.md",
+      "role": "隐私与合规"
+    },
+    {
+      "path": "docs/英文验收单.md",
+      "role": "英文验收单"
+    },
+    {
+      "path": "references/分册①_定名查重与素材清单.md",
+      "role": "分册① 清单"
+    },
+    {
+      "path": "references/分册②_README规整与美化.md",
+      "role": "分册② 版式与英文验收"
+    },
+    {
+      "path": "references/分册②附_美化模板.md",
+      "role": "分册②附 模板"
+    },
+    {
+      "path": "references/分册③_收口检查与指纹.md",
+      "role": "分册③ 收口与指纹"
+    },
+    {
+      "path": "references/分册③附_判据追溯与历史判例.md",
+      "role": "分册③附 判据追溯与历史判例（附录）"
+    },
+    {
+      "path": "references/FAQ常见问题.md",
+      "role": "FAQ 排障问答"
+    },
+    {
+      "path": "examples/端到端成品示例.md",
+      "role": "端到端成品示例"
+    },
+    {
+      "path": "references/分册④_三站式交互手册.md",
+      "role": "分册④ 交互手册"
+    },
+    {
+      "path": "scripts/checklist_check.py",
+      "role": "清单核查脚本"
+    },
+    {
+      "path": "scripts/en_acceptance_check.py",
+      "role": "英文验收脚本"
+    },
+    {
+      "path": "scripts/restyle_readme.py",
+      "role": "版式整形脚本"
+    },
+    {
+      "path": "scripts/fingerprints_scan.py",
+      "role": "指纹探针脚本"
+    },
+    {
+      "path": "scripts/text_quality_check.py",
+      "role": "文字质量检查脚本"
+    },
+    {
+      "path": "assets/截图/1-开篇引导.png",
+      "role": "图示：开篇引导"
+    },
+    {
+      "path": "assets/截图/2-问卷站素材约定.png",
+      "role": "图示：问卷站"
+    },
+    {
+      "path": "assets/截图/3-交付清单.png",
+      "role": "图示：交付清单"
+    },
+    {
+      "path": "assets/截图/4-交付报告与边界.png",
+      "role": "图示：交付报告与边界"
+    },
+    {
+      "path": "assets/截图/5-流程图_中文.png",
+      "role": "流程图（中文）"
+    },
+    {
+      "path": "assets/截图/6-流程图_英文.png",
+      "role": "流程图（英文）"
+    },
+    {
+      "path": "config.json",
+      "role": "版式整形配置"
+    },
+    {
+      "path": "terms.json",
+      "role": "英文术语表"
+    },
+    {
+      "path": "icon.png",
+      "role": "128×128 铃铛图标（页面按 96px 显示）"
+    },
+    {
+      "path": "index.html",
+      "role": "静态主页"
+    },
+    {
+      "path": "docs/收口检查单.md",
+      "role": "收口 15 项读数"
+    },
+    {
+      "path": "assets/brand/bell.svg",
+      "role": "铃铛矢量源"
+    },
+    {
+      "path": "assets/brand/icon-shipgo.svg",
+      "role": "ShipGo 图标矢量源"
+    },
+    {
+      "path": "assets/team/名单.md",
+      "role": "头像↔名册权威映射"
+    },
+    {
+      "path": "README.md",
+      "role": "家人墙（版式七段第 6 段）"
+    },
+    {
+      "path": "README.en.md",
+      "role": "家人墙（英文，L2 意译口径）"
+    }
+  ],
+  "commands": [
+    "python -B -I -X utf8 scripts/en_acceptance_check.py --selftest",
+    "python -B -I -X utf8 scripts/restyle_readme.py --selftest",
+    "python -B -I -X utf8 scripts/checklist_check.py --selftest",
+    "python -B -I -X utf8 scripts/text_quality_check.py --selftest",
+    "python -B -I -X utf8 scripts/fingerprints_scan.py . --check",
+    "python -B -I -X utf8 scripts/checklist_check.py <项目根> --stage pre",
+    "python -B -I -X utf8 scripts/en_acceptance_check.py README.en.md --terms terms.json --dir <项目根>",
+    "python -B -I -X utf8 scripts/restyle_readme.py README.md -c config.json -o README.new.md",
+    "python -B -I -X utf8 scripts/restyle_readme.py README.new.md -c config.json --check",
+    "python -B -I -X utf8 scripts/restyle_readme.py README.md -c config.json -o README.new.md --idempotent",
+    "python -B -I -X utf8 scripts/fingerprints_scan.py <发布目录>",
+    "python -B -I -X utf8 scripts/text_quality_check.py <发布目录>"
+  ],
+  "exit_codes": {
+    "0": "通过",
+    "1": "内容判红",
+    "2": "用法或输入环境错"
+  },
+  "ledger": {
+    "file": "FINGERPRINTS.md",
+    "columns": [
+      "文件",
+      "字节",
+      "SHA256（前 16）"
+    ],
+    "self_excluded": true
+  },
+  "boundaries": [
+    "不代开仓",
+    "不代上传",
+    "不代发版",
+    "不管网站部署上线"
+  ],
+  "home_site": {
+    "url": "https://c2fnbmhd.qwenwork.host/",
+    "name": "老秦家的本地小工具",
+    "scope": "作者家的作品架；仅 README 结尾一行外链，本体不访问、不产生任何请求。"
+  }
+}

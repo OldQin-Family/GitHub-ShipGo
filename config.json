@@ -1,0 +1,6 @@
+{
+  "icon": {"src": "icon.png", "alt": "GitHub-ShipGo 铃铛"},
+  "badges": ["MIT", "Python 标准库", "GitHub / Gitee", "Skill 包", "只前置不介入"],
+  "screenshots": [],
+  "section_titles": {"screenshots": "界面一览", "flow": "整机流程图", "toc": "本文目录"}
+}

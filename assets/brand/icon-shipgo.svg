@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- GitHub-ShipGo · 发布包（公认开口纸盒路径，24 网格缩到 17 倍留出右上角）＋赭红上飞箭头（发出去）。
+       同 bell.svg 家族：viewBox 512、currentColor 线描、圆角端点、fill:none、单一 accent 点睛。 -->
+  <path transform="translate(48 48) scale(17)"
+        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z M3.29 7 12 12l8.71-5 M12 22V12"
+        stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- 上飞箭头：赭红点睛，仅此一处 accent（从盒子右上角起飞） -->
+  <path d="M462 84 L492 124 H476 V176 H448 V124 H432 Z" fill="#A0432A"/>
+</svg>

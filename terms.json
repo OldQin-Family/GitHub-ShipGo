@@ -1,0 +1,14 @@
+{
+  "release package": ["publish package", "distribution pack"],
+  "three-stage flow": ["three-station flow", "three-stage process"],
+  "questionnaire stage": ["questionnaire station"],
+  "automated stage": ["automatic section"],
+  "closeout check": ["closing check", "final review"],
+  "fingerprint ledger": ["hash table", "checksum table"],
+  "probe": ["scanner"],
+  "English acceptance check": ["English review", "English proofreading"],
+  "lightweight models": ["weak models", "low-capability models"],
+  "boundary": ["redline"],
+  "ship-ready": ["publish-ready"],
+  "_note": ["Keys are the chosen English terms; values are banned older renderings. Keys beginning with an underscore are notes and are skipped by the checker."]
+}
