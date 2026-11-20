@@ -95,7 +95,7 @@ const PAGE_HTML = `<!doctype html>
     <div class="list">
       <label class="item"><input type="checkbox" data-id="pre-1"><span class="txt">四支脚本 <small>--selftest</small> 全 exit 0<small>en / restyle / checklist / text_quality；探针不走 --selftest。</small></span></label>
       <label class="item"><input type="checkbox" data-id="pre-2"><span class="txt">四工具联检全 PASS<small>按分册③ §2.1 的代码块实跑，结论留在文字里。</small></span></label>
-      <label class="item"><input type="checkbox" data-id="pre-3"><span class="txt">指纹探针结论为「表盘一致」<small><code>fingerprints_scan.py . --check</small></span></label>
+      <label class="item"><input type="checkbox" data-id="pre-3"><span class="txt">指纹探针结论为「表盘一致」<small><code>fingerprints_scan.py . --check</code></small></span></label>
       <label class="item"><input type="checkbox" data-id="pre-4"><span class="txt">包版本已从 SKILL.md frontmatter 读取并自报</span></label>
     </div>
   </section>
