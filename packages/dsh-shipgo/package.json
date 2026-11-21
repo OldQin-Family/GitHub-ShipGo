@@ -1,6 +1,6 @@
 {
   "name": "dsh-shipgo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ShipGo release checklist panel for DSH: track pre-release gates for GitHub tags, releases, package assets, and delivery. Progress stays in the browser.",
   "type": "module",
   "main": "lib/index.mjs",

@@ -226,6 +226,40 @@ const PAGE_HTML = `<!doctype html>
 </body>
 </html>`;
 
+function rejectUnadmitted(ctx, req, res) {
+  const connection = ctx.get('connection');
+  if (typeof connection?.requestRejection !== 'function') {
+    res.writeHead(503, {
+      'content-type': 'application/json; charset=utf-8',
+      'cache-control': 'no-store',
+      'x-content-type-options': 'nosniff',
+    });
+    res.end(JSON.stringify({ error: 'DSH connection authentication service is unavailable.' }));
+    return true;
+  }
+
+  let status;
+  try {
+    status = connection.requestRejection(req);
+  } catch (_) {
+    status = 503;
+  }
+
+  if (status === undefined) return false;
+  if (!Number.isInteger(status)) status = 503;
+  res.writeHead(status, {
+    'content-type': 'application/json; charset=utf-8',
+    'cache-control': 'no-store',
+    'x-content-type-options': 'nosniff',
+  });
+  res.end(JSON.stringify({
+    error: status === 401
+      ? 'DSH login required.'
+      : 'Request from an untrusted or cross-site origin was refused.',
+  }));
+  return true;
+}
+
 export function apply(ctx) {
   const webServer = ctx.get('webServer');
   if (!webServer) return;
@@ -234,6 +268,7 @@ export function apply(ctx) {
     kind: 'exact',
     path: '/dsh-shipgo',
     handler(req, res) {
+      if (rejectUnadmitted(ctx, req, res)) return;
       res.writeHead(200, {
         'content-type': 'text/html; charset=utf-8',
         'cache-control': 'no-store',
@@ -247,12 +282,13 @@ export function apply(ctx) {
     kind: 'exact',
     path: '/dsh-shipgo/health',
     handler(req, res) {
+      if (rejectUnadmitted(ctx, req, res)) return;
       res.writeHead(200, {
         'content-type': 'application/json; charset=utf-8',
         'cache-control': 'no-store',
         'x-content-type-options': 'nosniff',
       });
-      res.end(JSON.stringify({ ok: true, plugin: 'dsh-shipgo', version: '0.1.0' }));
+      res.end(JSON.stringify({ ok: true, plugin: 'dsh-shipgo', version: '0.1.1' }));
     },
   });
 
